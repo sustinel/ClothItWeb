@@ -190,6 +190,7 @@
     <Content Include="img\footer-logo.png" />
     <Content Include="img\location-icon.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\team\mauri.jpg" />
     <Content Include="img\parallax\city.jpg" />
     <Content Include="img\preloader.gif" />
     <Content Include="img\team\member-1.png" />
@@ -225,6 +226,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\clothit.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
