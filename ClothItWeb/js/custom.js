@@ -119,7 +119,7 @@ $(document).ready(function(){
 
 // ==========  START GOOGLE MAP ========== //
 function initialize() {
-    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+    var myLatLng = new google.maps.LatLng(-34.888716, -56.159230);
 
     var mapOptions = {
         zoom: 14,
@@ -142,7 +142,7 @@ function initialize() {
         position: myLatLng,
         map: map,
         icon: 'img/location-icon.png',
-        title: '',
+        title: 'Universidad Católica del Uruguay',
     });
 
 }

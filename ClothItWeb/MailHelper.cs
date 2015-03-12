@@ -83,9 +83,9 @@ namespace ClothItWeb
 
             EmailMessage message = new EmailMessage();
 
-            message.subject = "Thanks for your message !";
+            message.subject = "You've been subscribed to ClothIt newsletter";
             string body = GetNewsletterConfirmTemplate();
-            body = body.Replace("{{ENAIL}}", contacto.Email);
+            body = body.Replace("{{EMAIL}}", contacto.Email);
             message.html = body;
             EmailAddress address = new EmailAddress(contacto.Email);
             List<EmailAddress> listaEmail = new List<EmailAddress>();

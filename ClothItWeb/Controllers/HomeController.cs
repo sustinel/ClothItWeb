@@ -53,7 +53,7 @@ namespace ClothItWeb.Controllers
                 var result = await db.SaveChangesAsync();
 
                 //ENVIO MAIL AL USUARIO Y AL ADMINISTRADOR
-                var res = await MailHelper.EnviarNewsletter(contacto);
+                var res = await MailHelper.EnviarNewsletterUser(contacto);
        
 
             }
