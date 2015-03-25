@@ -215,12 +215,22 @@
     <Content Include="css\media-queries.css" />
     <Content Include="css\normalize.min.css" />
     <Content Include="css\owl.carousel.css" />
+    <Content Include="css\font-awesome.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="img\android.png" />
+    <Content Include="img\ANDROID_SCREENSHOT.png" />
     <Content Include="img\banner.jpg" />
     <Content Include="img\envelop.png" />
     <Content Include="img\footer-logo.png" />
+    <Content Include="img\ios.png" />
+    <Content Include="img\IPHONE_SCREENSHOT.png" />
     <Content Include="img\location-icon.png" />
+    <Content Include="img\logo-big.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\parallax\platforms.png" />
+    <Content Include="img\team\nacho.jpg" />
+    <Content Include="img\team\sebag.jpg" />
+    <Content Include="img\team\sebau.png" />
     <Content Include="img\team\mauri.jpg" />
     <Content Include="img\parallax\city.jpg" />
     <Content Include="img\preloader.gif" />
@@ -274,6 +284,7 @@
       <DependentUpon>ClothItDb.edmx</DependentUpon>
       <LastGenOutput>ClothItDb.cs</LastGenOutput>
     </Content>
+    <Content Include="fonts\fontawesome-webfont.woff2" />
     <None Include="Properties\PublishProfiles\clothit.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
