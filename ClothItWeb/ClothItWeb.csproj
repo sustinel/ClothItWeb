@@ -226,6 +226,7 @@
     <Content Include="img\IPHONE_SCREENSHOT.png" />
     <Content Include="img\location-icon.png" />
     <Content Include="img\logo-big.png" />
+    <Content Include="img\logo-black.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\parallax\platforms.png" />
     <Content Include="img\team\nacho.jpg" />
