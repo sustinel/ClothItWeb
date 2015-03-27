@@ -286,6 +286,9 @@
       <LastGenOutput>ClothItDb.cs</LastGenOutput>
     </Content>
     <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="img\Web.config" />
+    <Content Include="js\Web.config" />
+    <Content Include="css\Web.config" />
     <None Include="Properties\PublishProfiles\clothit.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -334,6 +337,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Scripts\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace ClothItWeb.Controllers
 {
@@ -12,6 +13,8 @@ namespace ClothItWeb.Controllers
     {
         private ClothItEntities db = new ClothItEntities();
 
+        // Cachea 1 semana en el cliente
+        [OutputCache(Duration = 604800, Location = OutputCacheLocation.Client)]
         public ActionResult Index()
         {
             return View();
