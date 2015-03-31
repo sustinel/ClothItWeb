@@ -172,7 +172,7 @@
     <value>Share the way you dress in trending threads or in private groups with your friends</value>
   </data>
   <data name="HowToStep3" xml:space="preserve">
-    <value>Retrolimentate</value>
+    <value>Recibe retroalimentacion</value>
   </data>
   <data name="HowToStep3Desc" xml:space="preserve">
     <value>Get the opinion from members of the community where you share your clothes, they could suggest you new clothes or combinations</value>
@@ -229,7 +229,7 @@
     <value>Enviar Mensaje</value>
   </data>
   <data name="StoreInterested" xml:space="preserve">
-    <value>Is your store interested?</value>
+    <value>Tu tienda esta interesada ?</value>
   </data>
   <data name="StoreInterestedDesc" xml:space="preserve">
     <value>Cloth It offers Store profiles for those stores that want to publish or share new products or trends in our network. Contact us filling the form in order to have more information about Store profiles</value>
