@@ -13,6 +13,17 @@
     <!-- Page Title -->
     <title>Cloth It - Share the way you look !</title>
 
+    @{
+        var culture = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.ToLowerInvariant();
+    }
+    @helper selected(string c, string culture)
+{
+    if (c == culture)
+    {
+        @:checked="checked"
+        }
+}
+
     <!-- Meta Description -->
     <!-- Meta GOOGLE -->
     <meta name="description" content="Share the way you look!">
@@ -36,6 +47,8 @@
     ================================================== -->
     <!-- Fontawesome Icon font -->
     <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Switch style -->
+    <link rel="stylesheet" href="css/switch.css">
     <!-- Twitter Bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- jquery.fancybox  -->
@@ -80,11 +93,11 @@
             <!-- main nav -->
             <nav class="collapse navbar-collapse navbar-right" role="navigation">
                 <ul id="nav" class="nav navbar-nav">
-                    <li class="current"><a href="#body">Home</a></li>
-                    <li><a href="#features">How to Use</a></li>
-                    <li><a href="#works">Preview</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="current"><a href="#body">@Resources.Resource.Home</a></li>
+                    <li><a href="#features">@Resources.Resource.Howto</a></li>
+                    <li><a href="#works">@Resources.Resource.Preview</a></li>
+                    <li><a href="#team">@Resources.Resource.Team</a></li>
+                    <li><a href="#contact">@Resources.Resource.Contact</a></li>
                 </ul>
             </nav>
             <!-- /main nav -->
@@ -97,6 +110,34 @@
     <!--
     Home Slider
     ==================================== -->
+    @*@using (Html.BeginForm("SetCulture", "Home"))
+    {
+        <fieldset>
+            <div class="control-group">
+                <div class="controls">
+                    <label for="en-us">
+                        <input name="culture" id="en-us" value="en-us" type="radio" @selected("en-us", culture) /> English
+                    </label>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <label for="es">
+                        <input name="culture" id="es" value="es" type="radio" @selected("es", culture) /> Español
+                    </label>
+                </div>
+            </div>
+
+        </fieldset>
+    }*@
+    @*<div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>*@
+
 
     <section id="slider">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -160,7 +201,7 @@
             <div class="row">
 
                 <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-                    <h2>How to use</h2>
+                    <h2>@Resource.Howto</h2>
                     <div class="devider"><i class="fa fa-mobile fa-lg"></i></div>
                 </div>
                 <!-- service item -->
@@ -171,8 +212,8 @@
                         </div>
 
                         <div class="service-desc">
-                            <h3>Take a pic</h3>
-                            <p>Take yourself a picture and select and identify the pieces of clothing that you want to have some feedback</p>
+                            <h3>@Resource.HowToStep1</h3>
+                            <p>@Resource.HowToStep1Desc</p>
                         </div>
                     </div>
                 </div>
@@ -185,8 +226,8 @@
                         </div>
 
                         <div class="service-desc">
-                            <h3>Share</h3>
-                            <p>Share the way you dress in trending threads or in private groups with your friends</p>
+                            <h3>@Resource.HowToStep2</h3>
+                            <p>@Resource.HowToStep2Desc</p>
                         </div>
                     </div>
                 </div>
@@ -199,8 +240,8 @@
                         </div>
 
                         <div class="service-desc">
-                            <h3>Get Feedback</h3>
-                            <p>Get the opinion from members of the community where you share your clothes, they could suggest you new clothes or combinations</p>
+                            <h3>@Resource.HowToStep3</h3>
+                            <p>@Resource.HowToStep3Desc</p>
                         </div>
                     </div>
 
@@ -214,8 +255,8 @@
                         </div>
 
                         <div class="service-desc">
-                            <h3>Be Popular</h3>
-                            <p>Every time someone likes your clothes you will be more popular in your community, and your opinions will be more important</p>
+                            <h3>@Resource.HowToStep4</h3>
+                            <p>@Resource.HowToStep4Desc</p>
                         </div>
                     </div>
                 </div>
@@ -241,7 +282,7 @@
                 <div class="row clearfix">
                     <div class="col-md-12 column">
                         <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                            <h2>Platforms</h2>
+                            <h2>@Resource.Platforms</h2>
                             <div class="devider"><i class="fa fa-tablet fa-lg"></i></div>
                         </div>
                     </div>
@@ -255,14 +296,14 @@
                             <div class="col-md-12 column sec-title mb50" style="margin-top:50px">
                                 <h2>
                                     Android
-                                </h2><span>Minimum requirements Android 4.0+</span><img src="img/android.png" alt="Android" />
+                                </h2><span>@Resource.AndroidReq</span><img src="img/android.png" alt="Android" />
                             </div>
                         </div>
                         <div class="row clearfix">
                             <div class="col-md-12 column sec-title mb50" style="text-align:right">
                                 <h2 style="margin-right:30px">
                                     iOS
-                                </h2><span>Minimum requirements iPhone 4, iOS 8.0+</span><img src="img/ios.png" alt="iOS" />
+                                </h2><span>@Resource.IosReq</span><img src="img/ios.png" alt="iOS" />
                             </div>
                         </div>
                     </div>
@@ -287,20 +328,20 @@
             <div class="row">
 
                 <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-                    <h2>Meet Our Team</h2>
+                    <h2>@Resource.MeetTeam</h2>
                     <div class="devider"><i class="fa fa-laptop fa-lg"></i></div>
                 </div>
 
                 <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-                    <p>We are a group of students from the Universidad Católica del Uruguay, all of us are currently working in the Computer Science field</p>
+                    <p>@Resource.TeamDesc</p>
                 </div>
                 <!-- single member -->
                 <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="member-thumb">
                         <img src="img/team/mauri.jpg" alt="Team Member" class="img-responsive">
                         <figcaption class="overlay">
-                            <h5>Marketing Manager</h5>
-                            <p>Mauricio is in charge of getting new contacts and promote the site</p>
+                            <h5>@Resource.MarketingTitle</h5>
+                            <p>@Resource.MarketingDesc</p>
                             <ul class="social-links text-center">
                                 <li><a href="https://www.twitter.com/maugsosa"><i class="fa fa-twitter fa-lg"></i></a></li>
                                 <li><a href="https://www.facebook.com/mauricioeduardo.garciasosa"><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -309,7 +350,7 @@
                         </figcaption>
                     </div>
                     <h4>Mauricio Garcia</h4>
-                    <span>Marketing Manager</span>
+                    <span>@Resource.MarketingTitle</span>
                 </figure>
                 <!-- end single member -->
                 <!-- single member -->
@@ -317,10 +358,8 @@
                     <div class="member-thumb">
                         <img src="img/team/sebag.jpg" alt="Team Member" class="img-responsive">
                         <figcaption class="overlay">
-                            <h5>UI/UX Designer</h5>
-                            <p>
-                                Sebastián is in charge of creating nice and tidy views, so the users can have a great experience
-                            </p>
+                            <h5>@Resource.UIUXTitle</h5>
+                            <p>@Resource.UIUXDesc</p>
                             <ul class="social-links text-center">
                                 <li><a href="https://twitter.com/SebaGarMol"><i class="fa fa-twitter fa-lg"></i></a></li>
                                 <li><a href="https://www.facebook.com/ssggmm"><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -329,7 +368,7 @@
                         </figcaption>
                     </div>
                     <h4>Sebastián Garcia</h4>
-                    <span>UI/UX Designer</span>
+                    <span>@Resource.UIUXTitle</span>
                 </figure>
                 <!-- end single member -->
                 <!-- single member -->
@@ -337,8 +376,8 @@
                     <div class="member-thumb">
                         <img src="img/team/nacho.jpg" alt="Team Member" class="img-responsive">
                         <figcaption class="overlay">
-                            <h5>Full Stack Developer</h5>
-                            <p>Nacho is the developer who works under the hood, his work is to make everthing work</p>
+                            <h5>@Resource.FullStackTitle</h5>
+                            <p>@Resource.FullStackDesc</p>
                             <ul class="social-links text-center">
                                 <li><a href="https://twitter.com/nachogarrone"><i class="fa fa-twitter fa-lg"></i></a></li>
                                 <li><a href="https://www.facebook.com/nachogarrone"><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -347,7 +386,7 @@
                         </figcaption>
                     </div>
                     <h4>Nacho Garrone</h4>
-                    <span>Full Stack Developer</span>
+                    <span>@Resource.FullStackTitle</span>
                 </figure>
                 <!-- end single member -->
                 <!-- single member -->
@@ -355,8 +394,8 @@
                     <div class="member-thumb">
                         <img src="img/team/sebau.png" alt="Team Member" class="img-responsive">
                         <figcaption class="overlay">
-                            <h5>Lead Developer </h5>
-                            <p>Sebastián is the one that works on every aspect of Cloth It, in charge of the hard work</p>
+                            <h5>@Resource.LeadTitle</h5>
+                            <p>@Resource.LeadDesc</p>
                             <ul class="social-links text-center">
                                 <li><a href="https://www.twitter.com/sebaustinelli"><i class="fa fa-twitter fa-lg"></i></a></li>
                                 <li><a href="https://www.facebook.com/sebaustinelli"><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -365,7 +404,7 @@
                         </figcaption>
                     </div>
                     <h4>Sebastián Ustinelli</h4>
-                    <span>Lead Developer</span>
+                    <span>@Resource.LeadTitle</span>
                 </figure>
                 <!-- end single member -->
 
@@ -386,7 +425,7 @@
                 <div class="row number-counters">
 
                     <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                        <h2>Our goals</h2>
+                        <h2>@Resource.Goals</h2>
                         <div class="devider"><i class="fa fa-trophy fa-lg"></i></div>
                     </div>
 
@@ -394,9 +433,9 @@
                     <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
                         <div class="counters-item">
                             <i class="fa fa-clock-o fa-3x"></i>
-                            <strong>Dec 2015</strong>
+                            <strong>@Resource.ReleaseDate1</strong>
                             <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>Release Date</p>
+                            <p>@Resource.ReleaseDate</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
@@ -404,7 +443,7 @@
                             <i class="fa fa-users fa-3x"></i>
                             <strong data-to="3000">0</strong>
                             <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>Active Users</p>
+                            <p>@Resource.ActiveUsers</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
@@ -412,7 +451,7 @@
                             <i class="fa fa-building-o fa-3x"></i>
                             <strong data-to="30">0</strong>
                             <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p> Store Profiles</p>
+                            <p>@Resource.StoreProfiles</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
@@ -420,7 +459,7 @@
                             <i class="fa fa-tags fa-3x"></i>
                             <strong data-to="50000">0</strong>
                             <!-- Set Your Number here. i,e. data-to="56" -->
-                            <p>Clothes Tagged</p>
+                            <p>@Resource.ClothesTagged</p>
                         </div>
                     </div>
                     <!-- end first count item -->
@@ -442,18 +481,18 @@
             <div class="row mb50">
 
                 <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-                    <h2>Is your store interested ?</h2>
+                    <h2>@Resource.StoreInterested</h2>
                     <div class="devider"><i class="fa fa-diamond fa-lg"></i></div>
                 </div>
 
                 <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-                    <p>Cloth It offers Store profiles for those stores that want to publish or share new products or trends in our network. Contact us filling the form in order to have more information about Store profiles</p>
+                    <p>@Resource.StoreInterestedDesc</p>
                 </div>
 
                 <!-- contact address -->
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
                     <div class="contact-address">
-                        <h3>Our Address</h3>
+                        <h3>@Resource.Address</h3>
                         <p>Avda. 8 de Octubre 2738</p>
                         <p>Montevideo, Uruguay</p>
                         <p>+(598) 94587666</p>
@@ -465,22 +504,22 @@
 
                 <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="contact-form">
-                        <h3>Contact Us</h3>
+                        <h3>@Resource.ContactUs</h3>
                         @using (Html.BeginForm("ContactUs", "Home"))
                         {
                             <div class="input-group name-email">
                                 <div class="input-field">
-                                    <input type="text" name="Nombre" id="name" placeholder="Name" class="form-control">
+                                    <input type="text" name="Nombre" id="name" placeholder=@Resource.Name class="form-control">
                                 </div>
                                 <div class="input-field">
                                     <input type="email" name="Email" id="email" placeholder="Email" class="form-control">
                                 </div>
                             </div>
                             <div class="input-group">
-                                <textarea name="Mensaje" id="message" placeholder="Message" class="form-control"></textarea>
+                                <textarea name="Mensaje" id="message" placeholder=@Resource.Message class="form-control"></textarea>
                             </div>
                             <div class="input-group">
-                                <input type="submit" id="form-submit" class="pull-right" value="Send message">
+                                <input type="submit" id="form-submit" class="pull-right" value=@Resource.Send>
                                 <label class="input-group pull-left" id="messageSent"></label>
                             </div>
                         }
@@ -519,39 +558,39 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="footer-single">
                         <img src="img/footer-logo.png" alt="">
-                        <p>Cloth It is a social network that targets fashion and trends about how to get dressed. Our goal is to bring users a different way to search for clothes or allowing them to get opinions from the community about the way they dress</p>
+                        <p>@Resource.ClothitDesc</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                     <div class="footer-single">
-                        <h6>Request an invite !!!</h6>
+                        <h6>@Resource.RequestInvite</h6>
                         @using (Html.BeginForm("Subscribe", "Home", FormMethod.Post, new { @class = "subscribe" }))
                         {
                             <input type="text" name="Email" id="subscribe">
                             <input type="submit" value="&#8594;" id="subs">
                         }
-                        <p>You'll get access to early realeases of our app and you'll be more popular in our netowrk</p>
+                        <p>@Resource.RequestInviteDesc</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                     <div class="footer-single">
-                        <h6>Explore</h6>
+                        <h6>@Resource.Explore</h6>
                         <ul>
 
-                            <li><a href="#features">How to use</a></li>
-                            <li><a href="#team">Our Team</a></li>
-                            <li><a href="#work">Preview</a></li>
+                            <li><a href="#features">@Resource.Howto</a></li>
+                            <li><a href="#team">@Resource.Team</a></li>
+                            <li><a href="#work">@Resource.Preview</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="footer-single">
-                        <h6>Support</h6>
+                        <h6>@Resource.Support</h6>
                         <ul>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">@Resource.ContactUs</a></li>
 
                         </ul>
                     </div>
@@ -561,7 +600,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="copyright text-center">
-                        Copyright © 2015 <a href="http://www.clothit.me/">Cloth It</a>. All rights reserved.
+                        @Resource.Copyrights
                     </p>
                 </div>
             </div>
@@ -609,6 +648,18 @@
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        (function ($) {
+            $("input[type = 'radio']").click(function () {
+                $(this).parents("form").submit(); // post form
+            });
+
+        })(jQuery);
+    </script>
+
+
 
     <script type="text/javascript">
         $(function () {

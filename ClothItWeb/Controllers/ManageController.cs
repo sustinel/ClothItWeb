@@ -11,7 +11,7 @@ using ClothItWeb.Models;
 namespace ClothItWeb.Controllers
 {
     [Authorize]
-    public class ManageController : Controller
+    public class ManageController : BaseController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;

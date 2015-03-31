@@ -168,11 +168,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CultureHelper.cs" />
     <Compile Include="MailHelper.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClothItDb.Context.cs">
@@ -216,6 +218,7 @@
     <Content Include="css\normalize.min.css" />
     <Content Include="css\owl.carousel.css" />
     <Content Include="css\font-awesome.css" />
+    <Content Include="css\switch.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="img\android.png" />
     <Content Include="img\ANDROID_SCREENSHOT.png" />
@@ -351,6 +354,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{5465d66a-4769-47ff-b296-9f66004e25a4}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

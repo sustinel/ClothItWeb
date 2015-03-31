@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActiveUsers" xml:space="preserve">
+    <value>Active Users</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Our Address</value>
+  </data>
+  <data name="AndroidReq" xml:space="preserve">
+    <value>Minimum requirements Android 4.0+</value>
+  </data>
+  <data name="ClothesTagged" xml:space="preserve">
+    <value>Clothes tagged</value>
+  </data>
+  <data name="ClothitDesc" xml:space="preserve">
+    <value>Cloth It is a social network that targets fashion and trends about how to get dressed. Our goal is to bring users a different way to search for clothes or allowing them to get opinions from the community about the way they dress</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Copyrights" xml:space="preserve">
+    <value>Copyright © 2015 &lt;a href="http://www.clothit.me/"&gt;Cloth It&lt;/a&gt;. All rights reserved.</value>
+  </data>
+  <data name="Explore" xml:space="preserve">
+    <value>Explore</value>
+  </data>
+  <data name="FullStackDesc" xml:space="preserve">
+    <value>Nacho is the developer who works under the hood, his work is to make everthing work</value>
+  </data>
+  <data name="FullStackTitle" xml:space="preserve">
+    <value>Full Stack Developer</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Our Goals</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Howto" xml:space="preserve">
+    <value>How to Use</value>
+  </data>
+  <data name="HowToStep1" xml:space="preserve">
+    <value>Take a Pic</value>
+  </data>
+  <data name="HowToStep1Desc" xml:space="preserve">
+    <value>Take yourself a picture and select and identify the pieces of clothing that you want to have some feedback</value>
+  </data>
+  <data name="HowToStep2" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="HowToStep2Desc" xml:space="preserve">
+    <value>Share the way you dress in trending threads or in private groups with your friends</value>
+  </data>
+  <data name="HowToStep3" xml:space="preserve">
+    <value>Get Feedback</value>
+  </data>
+  <data name="HowToStep3Desc" xml:space="preserve">
+    <value>Get the opinion from members of the community where you share your clothes, they could suggest you new clothes or combinations</value>
+  </data>
+  <data name="HowToStep4" xml:space="preserve">
+    <value>Be Popular</value>
+  </data>
+  <data name="HowToStep4Desc" xml:space="preserve">
+    <value>Every time someone likes your clothes you will be more popular in your community, and your opinions will be more important</value>
+  </data>
+  <data name="IosReq" xml:space="preserve">
+    <value>Minimum requirements iPhone 4, iOS 8.0+</value>
+  </data>
+  <data name="LeadDesc" xml:space="preserve">
+    <value>Sebastián is the one that works on every aspect of Cloth It, in charge of the hard work</value>
+  </data>
+  <data name="LeadTitle" xml:space="preserve">
+    <value>Lead Developer</value>
+  </data>
+  <data name="MarketingDesc" xml:space="preserve">
+    <value>Mauricio is in charge of getting new contacts and promote the site</value>
+  </data>
+  <data name="MarketingTitle" xml:space="preserve">
+    <value>Marketing Manager</value>
+  </data>
+  <data name="MeetTeam" xml:space="preserve">
+    <value>Meet our Team</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Platforms" xml:space="preserve">
+    <value>Platforms</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="ReleaseDate" xml:space="preserve">
+    <value>Release Date</value>
+  </data>
+  <data name="ReleaseDate1" xml:space="preserve">
+    <value>Dec 2015</value>
+  </data>
+  <data name="RequestInvite" xml:space="preserve">
+    <value>Request an invite !!!</value>
+  </data>
+  <data name="RequestInviteDesc" xml:space="preserve">
+    <value>You'll get access to early realeases of our app and you'll be more popular in our netowrk</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send Message</value>
+  </data>
+  <data name="StoreInterested" xml:space="preserve">
+    <value>Is your store interested?</value>
+  </data>
+  <data name="StoreInterestedDesc" xml:space="preserve">
+    <value>Cloth It offers Store profiles for those stores that want to publish or share new products or trends in our network. Contact us filling the form in order to have more information about Store profiles</value>
+  </data>
+  <data name="StoreProfiles" xml:space="preserve">
+    <value>Store Profiles</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="TeamDesc" xml:space="preserve">
+    <value>We are a group of students from the Universidad Católica del Uruguay, all of us are currently working in the Computer Science field</value>
+  </data>
+  <data name="UIUXDesc" xml:space="preserve">
+    <value>Sebastián is in charge of creating nice and tidy views, so the users can have a great experience</value>
+  </data>
+  <data name="UIUXTitle" xml:space="preserve">
+    <value>UI/UX Designer</value>
+  </data>
+</root>
