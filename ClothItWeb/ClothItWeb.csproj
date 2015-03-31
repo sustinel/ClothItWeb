@@ -232,10 +232,10 @@
     <Content Include="img\logo-black.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\parallax\platforms.png" />
+    <Content Include="img\team\mauri.png" />
     <Content Include="img\team\nacho.jpg" />
     <Content Include="img\team\sebag.jpg" />
     <Content Include="img\team\sebau.png" />
-    <Content Include="img\team\mauri.jpg" />
     <Content Include="img\parallax\city.jpg" />
     <Content Include="img\preloader.gif" />
     <Content Include="img\team\member-1.png" />
