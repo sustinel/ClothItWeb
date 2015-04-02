@@ -121,31 +121,31 @@
     <value>Usuarios Activos</value>
   </data>
   <data name="Address" xml:space="preserve">
-    <value>Nuestra direccion</value>
+    <value>Nuestra dirección</value>
   </data>
   <data name="AndroidReq" xml:space="preserve">
-    <value>Requiere minimo Android 4.0+</value>
+    <value>Requiere mínimo Android 4.0+</value>
   </data>
   <data name="ClothesTagged" xml:space="preserve">
-    <value>Prendas taggeadas</value>
+    <value>Ropas taggeadas</value>
   </data>
   <data name="ClothitDesc" xml:space="preserve">
-    <value>Cloth It is a social network that targets fashion and trends about how to get dressed. Our goal is to bring users a different way to search for clothes or allowing them to get opinions from the community about the way they dress</value>
+    <value>ClothIt es una red social que te mantiene al tanto de las últimas tendencias de la moda. Nuesto objetivo es que puedas recibir diferentes opiniones de la comunidad sobre lo que llevas puesto o recibir sugerencias sobre lo que podrías llevar.</value>
   </data>
   <data name="Contact" xml:space="preserve">
     <value>Contacto</value>
   </data>
   <data name="ContactUs" xml:space="preserve">
-    <value>Contactenos</value>
+    <value>Contactanos</value>
   </data>
   <data name="Copyrights" xml:space="preserve">
-    <value>Copyright © 2015 &lt;a href="http://www.clothit.me/"&gt;Cloth It&lt;/a&gt;. Todos los derechos reservados.</value>
+    <value>Todos los derechos reservados.</value>
   </data>
   <data name="Explore" xml:space="preserve">
     <value>Explorar</value>
   </data>
   <data name="FullStackDesc" xml:space="preserve">
-    <value>Nacho is the developer who works under the hood, his work is to make everthing work</value>
+    <value>Nacho es el desarrollador que se encarga de que todas las partes funcionen.</value>
   </data>
   <data name="FullStackTitle" xml:space="preserve">
     <value>Full Stack Developer</value>
@@ -154,52 +154,52 @@
     <value>Nuestras Metas</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Incio</value>
+    <value>Inicio</value>
   </data>
   <data name="Howto" xml:space="preserve">
     <value>Como Usar</value>
   </data>
   <data name="HowToStep1" xml:space="preserve">
-    <value>Saca una foto</value>
+    <value>Sacate una foto</value>
   </data>
   <data name="HowToStep1Desc" xml:space="preserve">
-    <value>Take yourself a picture and select and identify the pieces of clothing that you want to have some feedback</value>
+    <value>Sacate una foto, subila y etiquetá las prendas de las que querés recibir puntuación.</value>
   </data>
   <data name="HowToStep2" xml:space="preserve">
-    <value>Comparte</value>
+    <value>Compartí</value>
   </data>
   <data name="HowToStep2Desc" xml:space="preserve">
-    <value>Share the way you dress in trending threads or in private groups with your friends</value>
+    <value>Compartí tu forma de vestir y generá tendencias de moda o compartí en privado con tus amig@s.</value>
   </data>
   <data name="HowToStep3" xml:space="preserve">
-    <value>Recibe retroalimentacion</value>
+    <value>Preparate para las sugerencias</value>
   </data>
   <data name="HowToStep3Desc" xml:space="preserve">
-    <value>Get the opinion from members of the community where you share your clothes, they could suggest you new clothes or combinations</value>
+    <value>Podés obtener opiniones de los miembros de la comunidad, pueden sugerirte ropa o combinaciones nuevas.</value>
   </data>
   <data name="HowToStep4" xml:space="preserve">
-    <value>Se Popular</value>
+    <value>Recibí reconocimiento</value>
   </data>
   <data name="HowToStep4Desc" xml:space="preserve">
-    <value>Every time someone likes your clothes you will be more popular in your community, and your opinions will be more important</value>
+    <value>Cada vez que a alguien le guste tu ropa, ganás reputación en la comunidad y tus opiniones van a valer más!</value>
   </data>
   <data name="IosReq" xml:space="preserve">
     <value>Requiere minimo iPhone 4, iOS 8.0+</value>
   </data>
   <data name="LeadDesc" xml:space="preserve">
-    <value>Sebastián is the one that works on every aspect of Cloth It, in charge of the hard work</value>
+    <value>Sebastián es el encargado de todos los aspectos relacionados a ClothIt, el que realiza el trabajo duro.</value>
   </data>
   <data name="LeadTitle" xml:space="preserve">
     <value>Lead Developer</value>
   </data>
   <data name="MarketingDesc" xml:space="preserve">
-    <value>Mauricio is in charge of getting new contacts and promote the site</value>
+    <value>Mauricio es el encargado de conseguir nuevos clientes y de promover el sitio.</value>
   </data>
   <data name="MarketingTitle" xml:space="preserve">
     <value>Marketing Manager</value>
   </data>
   <data name="MeetTeam" xml:space="preserve">
-    <value>Conozca nuestro equipo</value>
+    <value>Conocé nuestro equipo</value>
   </data>
   <data name="Message" xml:space="preserve">
     <value>Mensaje</value>
@@ -220,19 +220,19 @@
     <value>Dic 2015</value>
   </data>
   <data name="RequestInvite" xml:space="preserve">
-    <value>Pida una invitacion !!!</value>
+    <value>Solicitá una invitación !!!</value>
   </data>
   <data name="RequestInviteDesc" xml:space="preserve">
-    <value>You'll get access to early realeases of our app and you'll be more popular in our netowrk</value>
+    <value>Vas a acceder al primer lanzamiento de la aplicación y vas a tener ciertos beneficios extra ;)</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Enviar Mensaje</value>
   </data>
   <data name="StoreInterested" xml:space="preserve">
-    <value>Tu tienda esta interesada ?</value>
+    <value>Tu tienda está interesada ?</value>
   </data>
   <data name="StoreInterestedDesc" xml:space="preserve">
-    <value>Cloth It offers Store profiles for those stores that want to publish or share new products or trends in our network. Contact us filling the form in order to have more information about Store profiles</value>
+    <value>ClothIt ofrece también perfiles para tiendas para poder publicar o compartir nuevos productos o tendencias en la red. Ponete en contacto con nosotros y nos comunicamos contigo para charlar del tema :)</value>
   </data>
   <data name="StoreProfiles" xml:space="preserve">
     <value>Perfiles de Tiendas</value>
@@ -244,12 +244,27 @@
     <value>Equipo</value>
   </data>
   <data name="TeamDesc" xml:space="preserve">
-    <value>We are a group of students from the Universidad Católica del Uruguay, all of us are currently working in the Computer Science field</value>
+    <value>Somos un grupo de estudiantes de la Universidad Católica del Uruguay, actualmente intentando terminar con Ingeniería en Informática :)</value>
   </data>
   <data name="UIUXDesc" xml:space="preserve">
-    <value>Sebastián is in charge of creating nice and tidy views, so the users can have a great experience</value>
+    <value>Sebastián es el encargado del diseño de la aplicación</value>
   </data>
   <data name="UIUXTitle" xml:space="preserve">
     <value>UI/UX Designer</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="LanguageChooser" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="RequestInviteWarning" xml:space="preserve">
+    <value>*Nunca vamos a compartir, alquilar o vender tu email, jamás.</value>
+  </data>
+  <data name="Subtitle" xml:space="preserve">
+    <value>Usá nuestra app revolucionaria de moda</value>
   </data>
 </root>

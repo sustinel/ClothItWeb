@@ -139,13 +139,13 @@
     <value>Contact Us</value>
   </data>
   <data name="Copyrights" xml:space="preserve">
-    <value>Copyright © 2015 &lt;a href="http://www.clothit.me/"&gt;Cloth It&lt;/a&gt;. All rights reserved.</value>
+    <value>All rights reserved.</value>
   </data>
   <data name="Explore" xml:space="preserve">
     <value>Explore</value>
   </data>
   <data name="FullStackDesc" xml:space="preserve">
-    <value>Nacho is the developer who works under the hood, his work is to make everthing work</value>
+    <value>Nacho is the developer who works under the hood, his work is to make everything work</value>
   </data>
   <data name="FullStackTitle" xml:space="preserve">
     <value>Full Stack Developer</value>
@@ -187,7 +187,7 @@
     <value>Minimum requirements iPhone 4, iOS 8.0+</value>
   </data>
   <data name="LeadDesc" xml:space="preserve">
-    <value>Sebastián is the one that works on every aspect of Cloth It, in charge of the hard work</value>
+    <value>Sebastián is the one who works on every aspect of Cloth It, in charge of the hard work</value>
   </data>
   <data name="LeadTitle" xml:space="preserve">
     <value>Lead Developer</value>
@@ -223,7 +223,7 @@
     <value>Request an invite !!!</value>
   </data>
   <data name="RequestInviteDesc" xml:space="preserve">
-    <value>You'll get access to early realeases of our app and you'll be more popular in our netowrk</value>
+    <value>You'll get access to early release of our app and updates of what we are actually doing.</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Send Message</value>
@@ -251,5 +251,20 @@
   </data>
   <data name="UIUXTitle" xml:space="preserve">
     <value>UI/UX Designer</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="LanguageChooser" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="RequestInviteWarning" xml:space="preserve">
+    <value>*We will never share, rent, or sell your email address to anyone, ever.</value>
+  </data>
+  <data name="Spanish" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="Subtitle" xml:space="preserve">
+    <value>Use our revolutionary fashion app</value>
   </data>
 </root>

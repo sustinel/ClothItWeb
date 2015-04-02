@@ -1,0 +1,54 @@
+﻿.dot {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    border: 4px solid white;
+    border-radius: 99999px;
+    cursor: pointer;
+    -moz-animation-name: example;
+    -o-animation-name: example;
+    -webkit-animation-name: example;
+    animation-name: example;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.dot:hover {
+        background-color: white;
+        border: 4px solid black;
+        -webkit-animation: animation 1s 16 ease;
+        -webkit-animation-play-state: paused;
+        -moz-animation: animation 1s 16 ease;
+        -o-animation: animation 1s 16 ease;
+        animation: animation 1s 16 ease;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+
+
+/* The animation code */
+@-moz-keyframes example {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-webkit-keyframes example {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes example {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.tooltip-inner {
+    min-width: 200px; 
+}

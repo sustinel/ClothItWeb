@@ -21,7 +21,7 @@
     if (c == culture)
     {
         @:checked="checked"
-        }
+    }
 }
 
     <!-- Meta Description -->
@@ -32,7 +32,10 @@
 
     <!-- Meta FACEBOOK -->
     <meta property="og:title" content="Cloth It - Share the way you look !" />
-    <meta property="og:description" content="Cloth It is a social network that targets fashion and trends about how to get dressed. Our goal is to bring users a different way to search for clothes or allowing them to get opinions from the community about the way they dress." />
+    <meta property="og:description" content=@Resource.ClothitDesc />
+    <meta property="og:description" content="ClothIt es una red social que te mantiene al tanto de las últimas tendencias de la moda. Nuesto objetivo es que puedas recibir diferentes opiniones de la comunidad sobre lo que llevas puesto o recibir sugerencias sobre lo que podrías llevar." />
+    <meta property="og:description" content="Cloth It is a social network that targets fashion and trends about how to get dressed. Our goal is to bring users a different way to search for clothes or allowing them to get opinions from the community about the way they dress" />
+
     <meta property="og:url" content="http://clothit.me" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="http://clothit.me/img/logo-black.png" />
@@ -49,6 +52,8 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <!-- Switch style -->
     <link rel="stylesheet" href="css/switch.css">
+    <!-- Dot Hover style -->
+    <link rel="stylesheet" href="css/dothover.css">
     <!-- Twitter Bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- jquery.fancybox  -->
@@ -110,35 +115,6 @@
     <!--
     Home Slider
     ==================================== -->
-    @*@using (Html.BeginForm("SetCulture", "Home"))
-    {
-        <fieldset>
-            <div class="control-group">
-                <div class="controls">
-                    <label for="en-us">
-                        <input name="culture" id="en-us" value="en-us" type="radio" @selected("en-us", culture) /> English
-                    </label>
-                </div>
-            </div>
-            <div class="control-group">
-                <div class="controls">
-                    <label for="es">
-                        <input name="culture" id="es" value="es" type="radio" @selected("es", culture) /> Español
-                    </label>
-                </div>
-            </div>
-
-        </fieldset>
-    }*@
-    @*<div class="onoffswitch">
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-        <label class="onoffswitch-label" for="myonoffswitch">
-            <span class="onoffswitch-inner"></span>
-            <span class="onoffswitch-switch"></span>
-        </label>
-    </div>*@
-
-
     <section id="slider">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -156,7 +132,14 @@
                     <div class="carousel-caption">
                         <img data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated img-responsive mainlogo" src="img/logo-big.png" alt="Clothit">
                         <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color" contenteditable="false">/share</span> The way you look</h3>
-                        <p data-wow-duration="1000ms" class="wow slideInRight animated">Use our revolutionary fashion app</p>
+                        <p data-wow-duration="1000ms" class="wow slideInRight animated" style="margin-bottom:20px;">@Resource.Subtitle</p>
+
+                        <a href="#invite">
+                            <span class="btn btn-danger btn-lg wow bounceInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                                @Resource.RequestInvite
+                            </span>
+                        </a>
+
 
                         <ul class="social-links text-center">
                             <li><a href="http://www.facebook.com/clothit"><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -166,23 +149,6 @@
                     </div>
                 </div>
                 <!-- end single slide -->
-                <!-- single slide -->
-                @*<div class="item" style="background-image: url(img/banner.jpg);">
-                        <div class="carousel-caption">
-                            <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Team</span>!</h2>
-                            <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
-                            <p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals</p>
-
-                            <ul class="social-links text-center">
-                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>*@
-                <!-- end single slide -->
-
             </div>
             <!-- End Wrapper for slides -->
 
@@ -309,6 +275,9 @@
                     </div>
                     <div class="col-md-4 column wow fadeInRight delay=1000ms">
                         <img src="img/IPHONE_SCREENSHOT.png" alt="iOS" />
+                        <div class="dot" data-x="30%" data-y="25%"><a href="#" rel="tooltip" title="Maggie's Reputation, based on others review."><img src="img/dot_transparent.png" /></a></div>
+                        <div class="dot" data-x="46%" data-y="73%"><a href="#" rel="tooltip" title="Spread the word! You like this!"><img src="img/dot_transparent.png" /></a></div>
+                        <div class="dot" data-x="53%" data-y="83%"><a href="#" rel="tooltip" title="Tell the world what you have to say about this cloth!"><img src="img/dot_transparent.png" /></a></div>
                     </div>
                 </div>
             </div>
@@ -473,6 +442,46 @@
     End Some fun facts
     ==================================== -->
     <!--
+    Request invite
+    ==================================== -->
+
+    <section id="invite" class="invite">
+        <div class="container">
+            <div class="row mb50">
+                <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+                    <h2>@Resource.RequestInvite</h2>
+                    <div class="devider"><i class="fa fa-diamond fa-lg"></i></div>
+                </div>
+                <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+                    <p>@Resource.RequestInviteDesc</p>
+                </div>
+
+                @using (Html.BeginForm("Subscribe", "Home", FormMethod.Post, new { @class = "subscribe" }))
+                {
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="contact-form">
+                                <div class="input-group email">
+                                    <div class="input-field" style="width:100%">
+                                        <input type="email" name="Email" style="position:static" id="subscribeemail" placeholder="Email" class="form-control">
+                                        <input type="submit" value="&#8594;" id="subs">
+                                    </div>
+                                </div>
+                            </div>
+                            <em>@Resource.RequestInviteWarning</em>
+                        </div>
+                    </div>
+                }
+                <hr style="margin-top:100px">
+            </div>
+        </div>
+    </section>
+
+    <!--
+    End Request Invite
+    ==================================== -->
+
+    <!--
     Contact Us
     ==================================== -->
 
@@ -562,23 +571,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <div class="footer-single">
-                        <h6>@Resource.RequestInvite</h6>
-                        @using (Html.BeginForm("Subscribe", "Home", FormMethod.Post, new { @class = "subscribe" }))
-                        {
-                            <input type="text" name="Email" id="subscribe">
-                            <input type="submit" value="&#8594;" id="subs">
-                        }
-                        <p>@Resource.RequestInviteDesc</p>
-                    </div>
-                </div>
-
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                     <div class="footer-single">
                         <h6>@Resource.Explore</h6>
                         <ul>
-
                             <li><a href="#features">@Resource.Howto</a></li>
                             <li><a href="#team">@Resource.Team</a></li>
                             <li><a href="#work">@Resource.Preview</a></li>
@@ -596,14 +592,32 @@
                     </div>
                 </div>
 
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                    <div class="footer-single">
+                        <h6>@Resource.LanguageChooser</h6>
+                        @using (Html.BeginForm("SetCulture", "Home"))
+                        {
+                            <ul>
+                                <li>
+                                    <input name="culture" id="en-us" value="en-us" type="radio" @selected("en-us", culture) /> @Resource.English
+                                </li>
+                                <li>
+                                    <input name="culture" id="es" value="es" type="radio" @selected("es", culture) /> @Resource.Spanish
+                                </li>
+                            </ul>
+                        }
+                    </div>
+                </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12">
                     <p class="copyright text-center">
-                        @Resource.Copyrights
+                        Copyright © 2015 <a href="http://www.clothit.me">Cloth It</a>. @Resource.Copyrights
                     </p>
                 </div>
             </div>
+            
         </div>
     </footer>
 
@@ -657,6 +671,28 @@
             });
 
         })(jQuery);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dot').each(function () {
+                $(this).css('left', $(this).data('x'));
+                $(this).css('top', $(this).data('y'));
+            });
+
+            var listdot = document.getElementByClassName("dot");
+            function Start() {
+                for (var i = 0; i < listdot.length; i++) {
+                    listdot[i].style.WebkitAnimation = "example";
+                }
+            }
+        });
+
+        $(function () {
+            $("[rel='tooltip']").tooltip();
+        });
+
+        
     </script>
 
 

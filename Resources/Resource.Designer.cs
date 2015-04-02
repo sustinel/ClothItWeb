@@ -124,11 +124,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright © 2015 &lt;a href=&quot;http://www.clothit.me/&quot;&gt;Cloth It&lt;/a&gt;. All rights reserved..
+        ///   Looks up a localized string similar to All rights reserved..
         /// </summary>
         public static string Copyrights {
             get {
                 return ResourceManager.GetString("Copyrights", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        public static string English {
+            get {
+                return ResourceManager.GetString("English", resourceCulture);
             }
         }
         
@@ -142,7 +151,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nacho is the developer who works under the hood, his work is to make everthing work.
+        ///   Looks up a localized string similar to Nacho is the developer who works under the hood, his work is to make everything work.
         /// </summary>
         public static string FullStackDesc {
             get {
@@ -268,7 +277,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sebastián is the one that works on every aspect of Cloth It, in charge of the hard work.
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string LanguageChooser {
+            get {
+                return ResourceManager.GetString("LanguageChooser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sebastián is the one who works on every aspect of Cloth It, in charge of the hard work.
         /// </summary>
         public static string LeadDesc {
             get {
@@ -376,11 +394,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You&apos;ll get access to early realeases of our app and you&apos;ll be more popular in our netowrk.
+        ///   Looks up a localized string similar to You&apos;ll get access to early release of our app and updates of what we are actually doing..
         /// </summary>
         public static string RequestInviteDesc {
             get {
                 return ResourceManager.GetString("RequestInviteDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to *We will never share, rent, or sell your email address to anyone, ever..
+        /// </summary>
+        public static string RequestInviteWarning {
+            get {
+                return ResourceManager.GetString("RequestInviteWarning", resourceCulture);
             }
         }
         
@@ -390,6 +417,15 @@ namespace Resources {
         public static string Send {
             get {
                 return ResourceManager.GetString("Send", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spanish.
+        /// </summary>
+        public static string Spanish {
+            get {
+                return ResourceManager.GetString("Spanish", resourceCulture);
             }
         }
         
@@ -417,6 +453,15 @@ namespace Resources {
         public static string StoreProfiles {
             get {
                 return ResourceManager.GetString("StoreProfiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use our revolutionary fashion app.
+        /// </summary>
+        public static string Subtitle {
+            get {
+                return ResourceManager.GetString("Subtitle", resourceCulture);
             }
         }
         
